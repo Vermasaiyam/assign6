@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess the Number</title>
+</head>
+
+<body>
+    <h1><pre> Guess the Number Game</pre></h1>
+    <div class="start">
+        <button id="button" class="btn">Start Game</button>
+    </div>
+
+    <script>
+        var guess = 1;
+        var num = prompt("Enter a Number between 0 and 100:");
+        document.getElementById("button").onclick = function () {
+            while (guess <= 5) {
+                var x = Math.floor((Math.random() * 100) + 1);
+                if (x == num) {
+                    document.write("Computer Guessed " + x);
+                    document.write("<br>")
+                    document.write("Computer Wins");
+                }
+                else {
+                    document.write("Computer Guessed " + x);
+                    document.write("<br>")
+                }
+                guess++;
+            }
+            document.write("You Wins");
+        }
+
+
+    </script>
+</body>
+
+</html>

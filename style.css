@@ -1,0 +1,22 @@
+pre{
+    font-size: 50px;
+    background: black;
+    color: white;
+    text-align: center;
+}
+.btn{
+    border-radius: 30px;
+    padding: 12px;
+    font-size: 17px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+body{
+    background-image: url(https://images.unsplash.com/photo-1682687218904-de46ed992b58?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1243&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
